@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Neutral Monotone Colors */
+    --background: 240 10% 3%;
+    --surface: 240 8% 8%;
+    --surface-hover: 240 8% 12%;
+    --border: 240 8% 15%;
+    --text-primary: 240 5% 96%;
+    --text-secondary: 240 5% 65%;
+    --text-muted: 240 5% 45%;
+    
+    /* Accent Colors */
+    --accent: 240 5% 20%;
+    --accent-hover: 240 5% 25%;
+    --accent-muted: 240 5% 15%;
+    
+    /* Status Colors (Muted) */
+    --success: 142 71% 45%;
+    --success-muted: 142 71% 45% / 0.1;
+    --warning: 45 93% 47%;
+    --warning-muted: 45 93% 47% / 0.1;
+    --error: 0 72% 51%;
+    --error-muted: 0 72% 51% / 0.1;
+    --info: 217 91% 60%;
+    --info-muted: 217 91% 60% / 0.1;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--text-primary))] antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Card Styles */
+  .card-base {
+    @apply bg-[hsl(var(--surface))] rounded-2xl transition-all duration-300;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card-hover {
+    @apply hover:bg-[hsl(var(--surface-hover))] hover:scale-[1.02];
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Button Base */
+  .btn-base {
+    @apply rounded-xl transition-all duration-200 font-medium;
+  }
+  
+  /* Input Base */
+  .input-base {
+    @apply bg-[hsl(var(--surface))] border border-[hsl(var(--border))] 
+           rounded-xl transition-all duration-200
+           focus:border-[hsl(var(--text-secondary))] focus:ring-2 focus:ring-[hsl(var(--accent))];
+  }
+}
+
+@layer utilities {
+  /* Animation Utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+  
+  .animate-slide-down {
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out;
+  }
+  
+  .animate-pulse-subtle {
+    animation: pulseSubtle 2s ease-in-out infinite;
+  }
+  
+  /* Skeleton Loader */
+  .skeleton {
+    @apply bg-[hsl(var(--accent))] rounded-xl;
+    animation: shimmer 2s infinite;
+    background: linear-gradient(
+      90deg,
+      hsl(var(--accent)) 0%,
+      hsl(var(--accent-hover)) 50%,
+      hsl(var(--accent)) 100%
+    );
+    background-size: 200% 100%;
+  }
+  
+  /* Glass Effect */
+  .glass-effect {
+    backdrop-filter: blur(12px) saturate(180%);
+    background-color: hsl(var(--surface) / 0.7);
+  }
+  
+  /* Text Gradient */
+  .text-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--text-primary)),
+      hsl(var(--text-secondary))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Smooth Transitions for Interactive Elements */
+button, a, input, textarea, select {
+  @apply transition-all duration-200;
+}
+
+/* Focus Visible Styles */
+*:focus-visible {
+  @apply outline-none ring-2 ring-[hsl(var(--accent-hover))] ring-offset-2 ring-offset-[hsl(var(--background))];
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[hsl(var(--surface))];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[hsl(var(--accent))] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[hsl(var(--accent-hover))];
+}
+
+/* Selection */
+::selection {
+  @apply bg-[hsl(var(--accent-hover))] text-[hsl(var(--text-primary))];
+}
+
+/* Disable Blue Highlight on Mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Loading Spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  @apply inline-block w-5 h-5 border-2 border-[hsl(var(--border))] border-t-[hsl(var(--text-primary))] rounded-full;
+  animation: spin 0.6s linear infinite;
+}
+
+/* Stagger Animation for Lists */
+.stagger-item {
+  animation: slideUp 0.4s ease-out backwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.05s; }
+.stagger-item:nth-child(2) { animation-delay: 0.1s; }
+.stagger-item:nth-child(3) { animation-delay: 0.15s; }
+.stagger-item:nth-child(4) { animation-delay: 0.2s; }
+.stagger-item:nth-child(5) { animation-delay: 0.25s; }
+.stagger-item:nth-child(6) { animation-delay: 0.3s; }
+.stagger-item:nth-child(7) { animation-delay: 0.35s; }
+.stagger-item:nth-child(8) { animation-delay: 0.4s; }
+.stagger-item:nth-child(9) { animation-delay: 0.45s; }
+
+/* Hover Effects */
+.hover-lift {
+  @apply transition-all duration-300;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Badge Styles */
+.badge-base {
+  @apply px-3 py-1 rounded-full text-xs font-medium transition-all duration-200;
+}
+
+/* Status Colors */
+.status-watching {
+  @apply bg-[hsl(var(--info-muted))] text-[hsl(var(--info))];
+}
+
+.status-completed {
+  @apply bg-[hsl(var(--success-muted))] text-[hsl(var(--success))];
+}
+
+.status-on-hold {
+  @apply bg-[hsl(var(--warning-muted))] text-[hsl(var(--warning))];
+}
+
+.status-plan-to-watch {
+  @apply bg-[hsl(var(--accent))] text-[hsl(var(--text-secondary))];
+}
