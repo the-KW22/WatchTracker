@@ -171,7 +171,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Have questions or suggestions? Feel free to reach out!
 
-- **GitHub**: [@yourusername](https://github.com/the-KW22)
+- **GitHub**: [@the-KW22](https://github.com/the-KW22)
 - **Email**: the.kw22me@gmail.com
 
 ## ⚖️ Terms & Privacy
