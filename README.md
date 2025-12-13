@@ -1,31 +1,21 @@
-# 🎬 ReelTrack
+# ReelTrack
 
 > Your personal movie and TV show progress tracker
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://your-app-url.vercel.app)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Made with React](https://img.shields.io/badge/made%20with-React-61DAFB)](https://reactjs.org/)
-
 **ReelTrack** is a modern web application that helps you track your watching progress for movies, TV shows, and anime. Never forget where you stopped watching again!
 
-![ReelTrack Screenshot](https://via.placeholder.com/1200x600/1a1a1a/ffffff?text=ReelTrack+Screenshot)
+## Features
 
-## ✨ Features
+- **Track Progress** - Record exact timestamps where you stopped watching
+- **Visual Progress** - See completion percentage with progress bars
+- **Search** - Find movies and TV shows with real TMDB data
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- **Secure Authentication** - Your data is private and secure
+- **Auto-Save** - Never lose your progress
+- **Clean UI** - Modern, minimalist design
+- **Fast & Smooth** - Built with performance in mind
 
-- 🎬 **Track Progress** - Record exact timestamps where you stopped watching
-- 📊 **Visual Progress** - See completion percentage with progress bars
-- 🔍 **Search** - Find movies and TV shows with real TMDB data
-- 📱 **Responsive Design** - Works perfectly on desktop, tablet, and mobile
-- 🔐 **Secure Authentication** - Your data is private and secure
-- 💾 **Auto-Save** - Never lose your progress
-- 🎨 **Clean UI** - Modern, minimalist design
-- ⚡ **Fast & Smooth** - Built with performance in mind
-
-## 🚀 Live Demo
-
-Try it out: [reeltrack.vercel.app](https://your-app-url.vercel.app)
-
-## 📸 Screenshots
+## Screenshots
 
 ### Home Page
 ![Home Page](https://via.placeholder.com/800x500/1a1a1a/ffffff?text=Home+Page)
@@ -34,9 +24,9 @@ Try it out: [reeltrack.vercel.app](https://your-app-url.vercel.app)
 ![Search](https://via.placeholder.com/800x500/1a1a1a/ffffff?text=Search+Page)
 
 ### Track Progress
-![Details](https://via.placeholder.com/800x500/1a1a1a/ffffff?text=Progress+Tracker)
+![Details] (src)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React 18 + TypeScript
 - **Build Tool**: Vite
@@ -66,8 +56,8 @@ Try it out: [reeltrack.vercel.app](https://your-app-url.vercel.app)
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/reeltrack.git
-cd reeltrack
+git clone https://github.com/the-KW22/ReelTracker.git
+cd ReelTracker
 ```
 
 2. **Install dependencies**
@@ -181,9 +171,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Have questions or suggestions? Feel free to reach out!
 
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Email**: your.email@example.com
-- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
+- **GitHub**: [@yourusername](https://github.com/the-KW22)
+- **Email**: the.kw22me@gmail.com
 
 ## ⚖️ Terms & Privacy
 
