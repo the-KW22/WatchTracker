@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
   :root {
@@ -30,14 +28,7 @@
   }
   
   * {
-    @apply border-border;
-  }
-  
-  body {
-    @apply bg-[hsl(var(--background))] text-[hsl(var(--text-primary))] antialiased;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    border-color: hsl(var(--border));
   }
   
   /* Smooth Scrolling */

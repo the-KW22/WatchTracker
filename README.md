@@ -18,13 +18,16 @@
 ## Screenshots
 
 ### Home Page
-![Home Page](https://via.placeholder.com/800x500/1a1a1a/ffffff?text=Home+Page)
+![Home Page](/images/Home.jpeg)
 
 ### Search Movies
-![Search](https://via.placeholder.com/800x500/1a1a1a/ffffff?text=Search+Page)
+![Search](/images/Search.jpeg)
 
-### Track Progress
-![Details] (src)
+### Movie Detail / Track Progress
+![Movie Detail / Track Progress](/images/MovieDetail.jpeg)
+
+### Profile
+![Profile](/images/Profile.jpeg)
 
 ## Tech Stack
 
@@ -57,7 +60,7 @@
 1. **Clone the repository**
 ```bash
 git clone https://github.com/the-KW22/ReelTracker.git
-cd ReelTracker
+cd WatchTracker
 ```
 
 2. **Install dependencies**
@@ -165,7 +168,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [TMDB](https://www.themoviedb.org/) for providing the movie database API
 - [Supabase](https://supabase.com/) for the backend infrastructure
 - [shadcn/ui](https://ui.shadcn.com/) for the beautiful components
-- [Vercel](https://vercel.com/) for hosting
 
 ## 📧 Contact
 
