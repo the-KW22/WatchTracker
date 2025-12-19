@@ -39,7 +39,7 @@
 - **API**: TMDB (The Movie Database)
 - **Hosting**: Vercel
 
-## 🎯 Use Cases
+## Use Cases
 
 - **Track TV Shows** - Remember which episode you're on
 - **Movie Progress** - Save your exact timestamp
@@ -47,7 +47,7 @@
 - **Binge Tracking** - Organize your weekend binges
 - **Anime Tracker** - Perfect for tracking anime series
 
-## 🚦 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -125,7 +125,7 @@ npm run dev
 
 Visit `http://localhost:5173` and start tracking! 🎉
 
-## 📝 How to Use
+## How to Use
 
 1. **Sign Up** - Create a free account
 2. **Search** - Find your favorite movies or TV shows
@@ -138,10 +138,10 @@ Visit `http://localhost:5173` and start tracking! 🎉
 
 Contributions are welcome! Feel free to:
 
-- 🐛 Report bugs
-- 💡 Suggest new features
-- 🔧 Submit pull requests
-- 📖 Improve documentation
+- Report bugs
+- Suggest new features
+- Submit pull requests
+- Improve documentation
 
 ### Development
 
@@ -159,29 +159,25 @@ npm run build
 npm run preview
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [TMDB](https://www.themoviedb.org/) for providing the movie database API
 - [Supabase](https://supabase.com/) for the backend infrastructure
 - [shadcn/ui](https://ui.shadcn.com/) for the beautiful components
 
-## 📧 Contact
+## Contact
 
 Have questions or suggestions? Feel free to reach out!
 
 - **GitHub**: [@the-KW22](https://github.com/the-KW22)
 - **Email**: the.kw22me@gmail.com
 
-## ⚖️ Terms & Privacy
+## Terms & Privacy
 
 By using ReelTrack, you agree to our [Terms & Conditions](TERMS.md) and [Privacy Policy](PRIVACY.md).
 
 ---
-
-**Made with ❤️ for movie and TV show enthusiasts**
-
-⭐ Star this repo if you find it helpful!
