@@ -123,7 +123,7 @@ CREATE INDEX idx_tracked_items_status ON tracked_items(status);
 npm run dev
 ```
 
-Visit `http://localhost:5173` and start tracking! 🎉
+Visit `http://localhost:5173` and start tracking!
 
 ## How to Use
 
@@ -134,7 +134,7 @@ Visit `http://localhost:5173` and start tracking! 🎉
 5. **Update Status** - Mark as watching, completed, or on-hold
 6. **Add Notes** - Write your thoughts about the show
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 
